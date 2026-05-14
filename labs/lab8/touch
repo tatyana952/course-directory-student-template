@@ -1,0 +1,36 @@
+def xor_bytes(text, key):
+    return bytes([b ^ key[i % len(key)] for i, b in enumerate(text)])
+
+P1 = "НаВашисходящийот1204".encode("utf-8")
+P2 = "ВСеверныйфилиалБанка".encode("utf-8")
+
+K = bytes.fromhex(
+    "05 0C 17 7F 0E 4E 37 D2 94 10 09 2E 22 57 FF C8 0B B2 70 54"
+)
+
+# Шифрование
+C1 = xor_bytes(P1, K)
+C2 = xor_bytes(P2, K)
+
+print("C1:", C1.hex())
+print("C2:", C2.hex())
+
+# Проверка дешифрования
+print("P1:", xor_bytes(C1, K).decode("utf-8"))
+print("P2:", xor_bytes(C2, K).decode("utf-8"))
+
+# Атака без ключа
+P1_xor_P2 = bytes([a ^ b for a, b in zip(C1, C2)])
+print("C1 ⊕ C2:", P1_xor_P2.hex())
+Новый интерфейс!
+Новый интерфейс! Появились папки и фоны. А знаете, что ещё?
+Все
+Непрочитанные
+Архив
+Бизнес-уведомления
+Избранное
+Людмила Ванюшкина
+Людмила Ванюшкина
+1
+Яндекс Переводчик
+Яндекс Переводчик

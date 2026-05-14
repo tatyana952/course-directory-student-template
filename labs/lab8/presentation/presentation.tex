@@ -221,17 +221,17 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
-  pdftitle={Презентация 1},
-  pdfauthor={Ванюшкина Татьна Валерьевна},
+  pdftitle={презентвция по лабораторной работе номер 2},
+  pdfauthor={Ванюшкина Татьяна Валерьевна},
   pdflang={ru-RU},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
 
-\title{Презентация 1}
-\subtitle{Установка и конфигурация системы на виртуальную машину}
-\author{Ванюшкина Татьна Валерьевна}
-\date{2026-05-10}
+\title{презентвция по лабораторной работе номер 2}
+\subtitle{Дискретное разграничение прав в Linux}
+\author{Ванюшкина Татьяна Валерьевна}
+\date{2026-05-14}
 
 \begin{document}
 \frame{\titlepage}
@@ -264,6 +264,9 @@
   \url{https://yamadharma.github.io/ru/}
 \end{itemize}
 \end{column}
+
+\begin{column}{0.3\textwidth}
+\end{column}
 \end{columns}
 \end{frame}
 
@@ -272,7 +275,8 @@
 \begin{itemize}[<+->]
 \tightlist
 \item
-  Установить операционную систему на виртуальную машину
+  Освоить на практике применение режима однократного гаммирования на
+  примере кодирования различных исходных текстов одним ключом
 \end{itemize}
 \end{frame}
 
@@ -300,98 +304,20 @@
 \section{Создание
 презентации}\label{ux441ux43eux437ux434ux430ux43dux438ux435-ux43fux440ux435ux437ux435ux43dux442ux430ux446ux438ux438}
 
-\begin{frame}{1}
-\phantomsection\label{section}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  загружаю в дисплейном классе операционную систему
-\end{itemize}
+\begin{frame}{Создание презентации}
+Разрабатываю приложение, позволяющее шифровать и де- шифровать тексты P1
+и P2 в режиме однократного гаммирования. Прило- жение определяют вид
+шифротекстов C1 и C2 обоих текстов P1 и P2 при известном ключе
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/20.pdf}
+\includegraphics[width=0.7\textwidth,height=\textheight]{image/21.pdf}
 \end{frame}
 
-\begin{frame}{2}
-\phantomsection\label{section-1}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  создаю каталог с именем пользователя
-\end{itemize}
-\end{frame}
+\section{Выводы}\label{ux432ux44bux432ux43eux434ux44b}
 
-\begin{frame}{3}
-\phantomsection\label{section-2}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  запускаю виртуальную машину
-\end{itemize}
-\end{frame}
-
-\begin{frame}{4}
-\phantomsection\label{section-3}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  создаю новую сиртуальную машину
-\end{itemize}
-\end{frame}
-
-\begin{frame}{5}
-\phantomsection\label{section-4}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  задаю необходимые параметры
-\end{itemize}
-\end{frame}
-
-\begin{frame}{6}
-\phantomsection\label{section-5}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  создаю пользователя
-\end{itemize}
-\end{frame}
-
-\begin{frame}{7}
-\phantomsection\label{section-6}
-\begin{itemize}[<+->]
-\tightlist
-\item
-  домашняя работа получаю информацию
-\end{itemize}
-
-\begin{enumerate}[<+->]
-\tightlist
-\item
-  Версия ядра Linux (Linux version).
-\item
-  Частота процессора (Detected Mhz processor).
-\item
-  Модель процессора (CPU0).
-\item
-  Объем доступной оперативной памяти (Memory available).
-\item
-  Тип обнаруженного гипервизора (Hypervisor detected).
-\item
-  Тип файловой системы корневого раздела
-\end{enumerate}
-\end{frame}
-
-\begin{frame}{8}
-\phantomsection\label{section-7}
-\begin{figure}
-
-\centering{
-
-\includegraphics[width=0.7\textwidth,height=\textheight]{image/1.pdf}
-
-}
-
-\caption{\label{fig-001}1}
-
-\end{figure}%
+\begin{frame}{Выводы}
+Я освоила на практике применение режима однократного гаммирования на
+примере кодирования различных исходных текстов одним ключом
 \end{frame}
 
 \begin{frame}{Процессор \texttt{pandoc}}
@@ -458,12 +384,112 @@
 \end{Shaded}
 \end{frame}
 
-\begin{frame}{Результаты}
-\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b}
+\section{Результаты}\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b}
+
+\begin{frame}[fragile]{Получающиеся форматы}
+\phantomsection\label{ux43fux43eux43bux443ux447ux430ux44eux449ux438ux435ux441ux44f-ux444ux43eux440ux43cux430ux442ux44b}
 \begin{itemize}[<+->]
 \tightlist
 \item
-  операционная система установлена на виртуальную машину
+  Полученный \texttt{pdf}-файл можно демонстрировать в любой программе
+  просмотра \texttt{pdf}
+\item
+  Полученный \texttt{html}-файл содержит в себе все ресурсы:
+  изображения, css, скрипты
+\end{itemize}
+\end{frame}
+
+\section{Элементы
+презентации}\label{ux44dux43bux435ux43cux435ux43dux442ux44b-ux43fux440ux435ux437ux435ux43dux442ux430ux446ux438ux438}
+
+\begin{frame}{Актуальность}
+\phantomsection\label{ux430ux43aux442ux443ux430ux43bux44cux43dux43eux441ux442ux44c}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Даёт понять, о чём пойдёт речь
+\item
+  Следует широко и кратко описать проблему
+\item
+  Мотивировать свое исследование
+\item
+  Сформулировать цели и задачи
+\item
+  Возможна формулировка ожидаемых результатов
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Цели и задачи}
+\phantomsection\label{ux446ux435ux43bux438-ux438-ux437ux430ux434ux430ux447ux438-1}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Не формулируйте более 1--2 целей исследования
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Материалы и методы}
+\phantomsection\label{ux43cux430ux442ux435ux440ux438ux430ux43bux44b-ux438-ux43cux435ux442ux43eux434ux44b-1}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Представляйте данные качественно
+\item
+  Количественно, только если крайне необходимо
+\item
+  Излишние детали не нужны
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Содержание исследования}
+\phantomsection\label{ux441ux43eux434ux435ux440ux436ux430ux43dux438ux435-ux438ux441ux441ux43bux435ux434ux43eux432ux430ux43dux438ux44f}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Предлагаемое решение задач исследования с обоснованием
+\item
+  Основные этапы работы
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Результаты}
+\phantomsection\label{ux440ux435ux437ux443ux43bux44cux442ux430ux442ux44b-1}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Не нужны все результаты
+\item
+  Необходимы логические связки между слайдами
+\item
+  Необходимо показать понимание материала
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Итоговый слайд}
+\phantomsection\label{ux438ux442ux43eux433ux43eux432ux44bux439-ux441ux43bux430ux439ux434}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Запоминается последняя фраза. © Штирлиц
+\item
+  Главное сообщение, которое вы хотите донести до слушателей
+\item
+  Избегайте использовать последний слайд вида \emph{Спасибо за внимание}
+\end{itemize}
+\end{frame}
+
+\section{Рекомендую}\label{ux440ux435ux43aux43eux43cux435ux43dux434ux443ux44e}
+
+\begin{frame}{Принцип 10/20/30}
+\phantomsection\label{ux43fux440ux438ux43dux446ux438ux43f-102030}
+\begin{itemize}[<+->]
+\tightlist
+\item
+  10 слайдов
+\item
+  20 минут на доклад
+\item
+  30 кегль шрифта
 \end{itemize}
 \end{frame}
 
